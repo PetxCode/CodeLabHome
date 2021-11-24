@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "lastName": "Oti",
+    "img": "img/peter.png",
+    "firstName": "Peter",
+    "location": "Ajegunle",
+    "desc": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "details": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "contact": "0802334422",
+    "projects": [
+      {
+        "name": "Pick a Studio",
+        "type": "Web App",
+        "desc": "An Ecommerce Platform for Photographers",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "img": "",
+        "name": "Ajegunle Data",
+        "type": "Web App",
+        "desc": "A Platform for Data collection",
+        "Tech": [{ "title": "React JS" }, { "title": "Firebase" }]
+      },
+      {
+        "name": "My School",
+        "type": "Web App",
+        "desc": "A Platform for Managing secondary schools data",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Let's Chat",
+        "type": "Web App",
+        "desc": "A chatting Platform for connecting with friends",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      }
+    ],
+    "years": 4,
+    "pry": [
+      { "skill": "React" },
+      { "skill": "NodeJS" },
+      { "skill": "MongoDB" },
+      { "skill": "Express" },
+      { "skill": "Firebase" },
+      { "skill": "React Native" }
+    ],
+    "sec": [
+      { "skill": "Python" },
+      { "skill": "Flutter" },
+      { "skill": "Machine Learning" },
+      { "skill": "TensorFlow" },
+      { "skill": "Git" }
+    ]
+  },
+  {
+    "id": 2,
+    "lastName": "Gbemi",
+    "img": "img/bukky.jpeg",
+    "firstName": "Bukky",
+    "location": "Ajegunle",
+    "desc": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "details": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "contact": "0802334422",
+    "type": "Web App",
+    "projects": [
+      {
+        "name": "Pick a Studio",
+        "type": "Web App",
+        "desc": "An Ecommerce Platform for Photographers",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Ajegunle Data",
+        "type": "Web App",
+        "desc": "A Platform for Data collection",
+        "Tech": [{ "title": "React JS" }, { "title": "Firebase" }]
+      },
+      {
+        "name": "My School",
+        "type": "Web App",
+        "desc": "A Platform for Managing secondary schools data",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Let's Chat",
+        "type": "Web App",
+        "desc": "A chatting Platform for connecting with friends",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      }
+    ],
+    "years": 8,
+    "pry": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ],
+    "sec": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ]
+  },
+  {
+    "id": 3,
+    "lastName": "Ubani",
+    "img": "img/uban.jpg",
+    "firstName": "Friday",
+    "location": "Ajegunle",
+    "desc": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "details": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "contact": "0802334422",
+    "type": "Web App",
+    "projects": [
+      {
+        "name": "Pick a Studio",
+        "desc": "An Ecommerce Platform for Photographers",
+        "type": "Web App",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Ajegunle Data",
+        "desc": "A Platform for Data collection",
+        "type": "Web App",
+        "Tech": [{ "title": "React JS" }, { "title": "Firebase" }]
+      },
+      {
+        "name": "My School",
+        "desc": "A Platform for Managing secondary schools data",
+        "type": "Web App",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Let's Chat",
+        "desc": "A chatting Platform for connecting with friends",
+        "type": "Web App",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      }
+    ],
+    "years": 6,
+    "pry": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ],
+    "sec": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ]
+  },
+  {
+    "id": 4,
+    "lastName": "Enyahma",
+    "img": "img/ndidi.jpeg",
+    "firstName": "Ndidi",
+    "location": "Ajegunle",
+    "desc": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "details": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "contact": "0802334422",
+
+    "projects": [
+      {
+        "name": "Pick a Studio",
+        "type": "Web App",
+        "desc": "An Ecommerce Platform for Photographers",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Ajegunle Data",
+        "type": "Web App",
+        "desc": "A Platform for Data collection",
+        "Tech": [{ "title": "React JS" }, { "title": "Firebase" }]
+      },
+      {
+        "name": "My School",
+        "type": "Web App",
+        "desc": "A Platform for Managing secondary schools data",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Let's Chat",
+        "type": "Web App",
+        "desc": "A chatting Platform for connecting with friends",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      }
+    ],
+    "years": 6,
+    "pry": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ],
+    "sec": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ]
+  },
+  {
+    "id": 5,
+    "lastName": "Samuel",
+    "img": "img/sam.JPG",
+    "firstName": "Kelechi",
+    "location": "Ajegunle",
+    "desc": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "details": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "contact": "0802334422",
+
+    "projects": [
+      {
+        "name": "Pick a Studio",
+        "type": "Web App",
+        "desc": "An Ecommerce Platform for Photographers",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Ajegunle Data",
+        "type": "Web App",
+        "desc": "A Platform for Data collection",
+        "Tech": [{ "title": "React JS" }, { "title": "Firebase" }]
+      },
+      {
+        "name": "My School",
+        "type": "Web App",
+        "desc": "A Platform for Managing secondary schools data",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Let's Chat",
+        "type": "Web App",
+        "desc": "A chatting Platform for connecting with friends",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      }
+    ],
+    "years": 6,
+    "pry": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ],
+    "sec": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ]
+  },
+  {
+    "id": 6,
+    "lastName": "Uyepken",
+    "img": "img/osas.jpg",
+    "firstName": "Osas",
+    "location": "Ajegunle",
+    "desc": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "details": "I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...! I am a React.js developer, Software Engineer by Training and a Technology enthusiast with professional experience of about 6years. I have passion to build robust and scalable solution. I have worked with diverse set of people and teams to deploy solution across the communications industry, e-commerce, manufacturing engineering, among other industries. Having graduated from the Unoversity of Benin, with a degree in BEng and have a desire to continue learning...!",
+    "contact": "0802334422",
+
+    "projects": [
+      {
+        "name": "Pick a Studio",
+        "type": "Web App",
+        "desc": "An Ecommerce Platform for Photographers",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Ajegunle Data",
+        "type": "Web App",
+        "desc": "A Platform for Data collection",
+        "Tech": [{ "title": "React JS" }, { "title": "Firebase" }]
+      },
+      {
+        "name": "My School",
+        "type": "Web App",
+        "desc": "A Platform for Managing secondary schools data",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      },
+      {
+        "name": "Let's Chat",
+        "type": "Web App",
+        "desc": "A chatting Platform for connecting with friends",
+        "Tech": [
+          { "title": "React JS" },
+          { "title": "Redux" },
+          { "title": "Firebase" }
+        ]
+      }
+    ],
+    "years": 6,
+    "pry": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ],
+    "sec": [
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" },
+      { "skill": "React" }
+    ]
+  }
+]
+
+
+
+
+

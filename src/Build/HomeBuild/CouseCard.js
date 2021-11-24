@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-
-const CoursCard = ({ bcl, title, para, img }) => {
+import { Link } from "react-router-dom";
+const CoursCard = ({ to, bcl, title, para, img }) => {
   return (
     <Container>
       <Header bcl={bcl}>
@@ -10,7 +10,7 @@ const CoursCard = ({ bcl, title, para, img }) => {
       </Header>
       <Title>{title}</Title>
       <Para>{para}</Para>
-      <Click bcl={bcl}>
+      <Click bcl={bcl} to={to}>
         Learn More <ArrowRightAltIcon />{" "}
       </Click>
     </Container>
@@ -26,7 +26,8 @@ const Title = styled.div`
   padding-top: 15px;
 `;
 
-const Click = styled.div`
+const Click = styled(Link)`
+  text-decoration: none;
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 30px;
@@ -34,11 +35,12 @@ const Click = styled.div`
   font-size: 20px;
   padding: 15px 20px;
   background: ${({ bcl }) => bcl};
-  color: black;
+  /* color: black; */
   border-radius: 3px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  color: #004080;
 
   .MuiSvgIcon-root {
     margin-top: 5px;
@@ -67,6 +69,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  color: #004080;
 `;
 const Container = styled.div`
   overflow: hidden;
@@ -81,7 +84,7 @@ const Container = styled.div`
   transform: scale(1);
   transition: all 350ms;
   margin: 15px;
-  /* padding-bottom: 20px; */
+  color: #004080;
 
   :hover {
     transform: scale(1.05);

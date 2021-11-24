@@ -35,6 +35,25 @@ const courseData2 = [
 ];
 const courseData1 = [{ topic: "" }, { topic: "" }];
 
+const profile = [
+  {
+    name: "Peter Oti",
+    img: "/img/peter.jpg",
+  },
+  {
+    name: "Friday Ubani",
+    img: "/img/ubani.jpg",
+  },
+  {
+    name: "Anyahma Niddi",
+    img: "/img/ndidi.jpeg",
+  },
+  {
+    name: "Gideon Ekeke",
+    img: "/img/gideon.jpeg",
+  },
+];
+
 const Cloud = () => {
   return (
     <Container>
@@ -54,12 +73,29 @@ const Cloud = () => {
         </Desc>
 
         <Card>
-          <CourseCard courseData={courseData} bg="#2c5b37" course="Azure" />
-          <CourseCard courseData={courseData2} bg="#2c5b37" course="AWS" />
           <CourseCard
+            courseData={courseData}
+            profile={profile}
+            bg="#2c5b37"
+            course="Azure"
+          />
+          <CourseCard
+            profile={profile}
+            courseData={courseData2}
+            bg="#2c5b37"
+            course="AWS"
+          />
+          <CourseCard
+            profile={profile}
             courseData={courseData}
             bg="#2c5b37"
             course="Google Cloud"
+          />
+          <CourseCard
+            profile={profile}
+            courseData={courseData}
+            bg="#2c5b37"
+            course="Firebase"
           />
         </Card>
       </Wrapper>

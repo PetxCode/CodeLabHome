@@ -35,6 +35,28 @@ const courseData2 = [
   { topic: "Fetching data from an API (REST and GraphQL)" },
 ];
 
+const profile = [
+  {
+    name: "Peter Oti",
+    img: "/img/peter.jpg",
+  },
+  {
+    name: "Gideon Ekeke",
+    img: "/img/gideon.jpeg",
+  },
+];
+
+const profile2 = [
+  {
+    name: "Peter Oti",
+    img: "/img/peter.jpg",
+  },
+  {
+    name: "Gideon Ekeke",
+    img: "/img/gideon.jpeg",
+  },
+];
+
 const FrontEnd = () => {
   return (
     <Container>
@@ -54,8 +76,18 @@ const FrontEnd = () => {
         </Desc>
 
         <Card>
-          <CourseCard courseData={courseData2} bg="#004080" course="React JS" />
-          <CourseCard courseData={courseData} bg="#004080" course="Vue JS" />
+          <CourseCard
+            courseData={courseData2}
+            profile={profile}
+            bg="#004080"
+            course="React JS"
+          />
+          <CourseCard
+            courseData={courseData}
+            profile={profile2}
+            bg="#004080"
+            course="Vue JS"
+          />
         </Card>
       </Wrapper>
     </Container>

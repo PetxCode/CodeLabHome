@@ -17,8 +17,8 @@ const TopHero = () => {
             internship) and earn a Diploma
           </Sub>
           <ButtonHolder>
-            <Button>Apply Now</Button>
-            <Button bg>Apply Now</Button>
+            <Button bg1>Apply Now (Closed)</Button>
+            {/* <Button bg>Apply Now</Button> */}
           </ButtonHolder>
 
           <Below>
@@ -77,9 +77,9 @@ const TextDown = styled.div`
 
 const Button = styled.div`
   padding: 20px 40px;
-  background-color: ${({ bg }) => (bg ? "transparent" : "black")};
+  background-color: ${({ bg }) => (bg ? "transparent" : "#004080")};
   color: ${({ bg }) => (bg ? "black" : "white")};
-  font-weight: ${({ bg }) => (bg ? "bold" : "normal")};
+  font-weight: ${({ bg1 }) => (bg1 ? "bold" : "normal")};
   margin: 10px;
   border: 3px solid;
   border-color: ${({ bg }) => (bg ? "black" : "transparent")};
@@ -134,4 +134,5 @@ const Contianer = styled.div`
   height: 100%;
   min-height: 700px;
   background-color: #fef6ee;
+  color: #004080;
 `;

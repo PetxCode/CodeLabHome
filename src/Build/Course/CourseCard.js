@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
 
-const CourseCard = ({ courseData, bg, course }) => {
+const CourseCard = ({ profile, courseData, bg, course }) => {
   return (
     <Card>
       <Top bg={bg}>
@@ -23,11 +23,56 @@ const CourseCard = ({ courseData, bg, course }) => {
           <Cous>{props.topic}</Cous>
         </View>
       ))}
+
+      <Div>
+        <Cous1>Instructors</Cous1>
+        <ProfileHolder>
+          {profile?.map(({ name, img }, i) => (
+            <Profile key={i}>
+              <Image src={img} />
+              <Name>{name}</Name>
+            </Profile>
+          ))}
+        </ProfileHolder>
+      </Div>
     </Card>
   );
 };
 
 export default CourseCard;
+
+const ProfileHolder = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+const Profile = styled.div`
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+const Image = styled.img`
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: black;
+  border: 2px solid black;
+`;
+const Cous1 = styled.div`
+  font-weight: bold;
+  font-size: 20px;
+`;
+const Name = styled.div`
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 13px;
+`;
+
+const Div = styled.div`
+  margin-left: 20px;
+  margin-top: 50px;
+`;
 
 const View = styled.div`
   margin: 10px;

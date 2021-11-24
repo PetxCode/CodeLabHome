@@ -3,19 +3,24 @@ import styled from "styled-components";
 import CoursCard from "./CouseCard";
 import bck from "./bck.svg";
 import fe from "./fe.svg";
+import p from "./2.png";
 import cloud from "./cloud.svg";
+import AppsIcon from "@mui/icons-material/Apps";
+
 const ArrangeCourse = () => {
   return (
     <Container>
       <Card>FIND THE RIGHT TRACK FOR YOU</Card>
       <Wrapper>
         <CoursCard
+          to="/course"
           bcl="#FEF3E9"
           img={fe}
           title="Frontend Engineering"
           para="Frontend Engineers are some of the most sought-after Software Engineers. This program is designed to provide you with in-depth knowledge on how to create functional websites by implementing web designs through the use of various programming languages. You will be exposed to best practices while executing projects with guidance from some of our faculty members comprised of top senior engineers."
         />
         <CoursCard
+          to="/course"
           bcl="#d0d1fd"
           img={bck}
           title="Backend Engineering"
@@ -28,9 +33,17 @@ const ArrangeCourse = () => {
         programming languages."
         />
         <CoursCard
+          to="/course"
           bcl="#F9D5D3"
           img={cloud}
           title="Cloud Engineering"
+          para="Cloud Engineering combines software development and IT operations to build and maintain cloud infrastructure. Cloud Engineers are in high demand, as more companies continue to move critical business processes and applications to cloud infrastructures. In this program, you will gain hands-on experience with cloud platforms, understand how cloud resources are allocated and paid for and learn how to shorten the systems development life-cycle."
+        />
+        <CoursCard
+          to="/course"
+          bcl="#efe8a2"
+          img={p}
+          title="Soft Skill"
           para="Cloud Engineering combines software development and IT operations to build and maintain cloud infrastructure. Cloud Engineers are in high demand, as more companies continue to move critical business processes and applications to cloud infrastructures. In this program, you will gain hands-on experience with cloud platforms, understand how cloud resources are allocated and paid for and learn how to shorten the systems development life-cycle."
         />
       </Wrapper>
@@ -57,5 +70,5 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   padding-bottom: 50px;
-  z-index: -10000000;
+  color: #004080;
 `;

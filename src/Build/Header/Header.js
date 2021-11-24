@@ -23,8 +23,17 @@ const Header = ({ bg }) => {
             <Nav to="/" bg={bg}>
               Home
             </Nav>
+            <Nav to="/about" bg={bg}>
+              About Us
+            </Nav>
             <Nav to="/course" bg={bg}>
               Course
+            </Nav>
+            <Nav to="/talents" bg={bg}>
+              Talents
+            </Nav>
+            <Nav to="/hire" bg={bg}>
+              Hire
             </Nav>
           </Navigation>
 

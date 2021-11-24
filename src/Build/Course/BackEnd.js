@@ -37,6 +37,36 @@ const courseData2 = [
   { topic: "Deployment" },
 ];
 
+const profile = [
+  {
+    name: "Friday Ubani",
+    img: "/img/ubani.jpg",
+  },
+  {
+    name: "Anyahma Niddi",
+    img: "/img/ndidi.jpeg",
+  },
+  {
+    name: "Peter Oti",
+    img: "/img/peter.jpg",
+  },
+];
+
+// const profile2 = [
+//   {
+//     name: "Friday Ubani",
+//     img: "/img/ubani.jpg",
+//   },
+//   {
+//     name: "Anyahma Niddi",
+//     img: "/img/ndidi.jpeg",
+//   },
+//   {
+//     name: "Peter Oti",
+//     img: "/img/peter.jpg",
+//   },
+// ];
+
 const BackEnd = () => {
   return (
     <Container>
@@ -56,8 +86,24 @@ const BackEnd = () => {
         </Desc>
 
         <Card>
-          <CourseCard courseData={courseData} bg="#ff1956" course="NodeJS" />
-          <CourseCard courseData={courseData2} bg="#ff1956" course="Ruby" />
+          <CourseCard
+            courseData={courseData}
+            profile={profile}
+            bg="#ff1956"
+            course="NodeJS"
+          />
+          <CourseCard
+            courseData={courseData2}
+            profile={profile}
+            bg="#ff1956"
+            course="Algorithm & Data Structure"
+          />
+          <CourseCard
+            courseData={courseData2}
+            profile={profile}
+            bg="#ff1956"
+            course="Ruby"
+          />
         </Card>
       </Wrapper>
     </Container>
