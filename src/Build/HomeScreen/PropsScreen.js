@@ -5,7 +5,6 @@ import find0 from "./../assets/first.jpg";
 import find1 from "./../assets/second.png";
 import { AiFillBug } from "react-icons/ai";
 import { BsFillPersonCheckFill, BsWindowDock } from "react-icons/bs";
-import BenefitComp from "./BenefitComp";
 
 const PropsScreen = () => {
   return (
@@ -21,7 +20,7 @@ const PropsScreen = () => {
         desc2="Personalize your learning experience"
         desc3="Get answers to complex problems"
       />
-      <BenefitComp />
+
       <HomeProps
         bg
         img={find1}

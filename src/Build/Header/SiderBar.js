@@ -5,6 +5,11 @@ import { app } from "./../../base";
 import HomeIcon from "@mui/icons-material/Home";
 import LockIcon from "@mui/icons-material/Lock";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
+import LocationCityIcon from "@mui/icons-material/LocationCity";
+import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
+
 import { Link } from "react-router-dom";
 
 const SiderBar = ({ toogle, setToggle }) => {
@@ -14,6 +19,7 @@ const SiderBar = ({ toogle, setToggle }) => {
       <Wrapper>
         <Navigation>
           <Nav
+            to="/"
             onClick={() => {
               setToggle(false);
             }}
@@ -24,14 +30,48 @@ const SiderBar = ({ toogle, setToggle }) => {
             <span>Home</span>
           </Nav>
           <Nav
+            to="/about"
             onClick={() => {
               setToggle(false);
             }}
           >
             <Icon>
-              <HomeIcon />
+              <LocalLibraryIcon />
+            </Icon>
+            <span>About Us</span>
+          </Nav>
+          <Nav
+            to="/course"
+            onClick={() => {
+              setToggle(false);
+            }}
+          >
+            <Icon>
+              <LibraryBooksIcon />
             </Icon>
             <span>Course</span>
+          </Nav>
+          <Nav
+            to="/talents"
+            onClick={() => {
+              setToggle(false);
+            }}
+          >
+            <Icon>
+              <DeveloperModeIcon />
+            </Icon>
+            <span>Talents</span>
+          </Nav>
+          <Nav
+            to="/hire"
+            onClick={() => {
+              setToggle(false);
+            }}
+          >
+            <Icon>
+              <LocationCityIcon />
+            </Icon>
+            <span>Hire our Talents</span>
           </Nav>
         </Navigation>
 
@@ -115,7 +155,9 @@ const Nav1 = styled.div`
   }
 `;
 
-const Nav = styled.div`
+const Nav = styled(Link)`
+  color: white;
+  text-decoration: none;
   display: flex;
   margin: 0px 0;
   padding-left: 40px;

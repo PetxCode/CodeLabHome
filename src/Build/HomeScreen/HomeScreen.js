@@ -1,23 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import PropsScreen from "./PropsScreen";
-import ToFind from "./ToFind";
-import ExpertSkills from "./../Expert/ExpertSkills";
+import BenefitComp from "./BenefitComp";
+import { StudentsRecord } from "./../StudentsRecord/StudentsRecord";
 
 const HomeScreen = () => {
   return (
     <Container>
       <Wrapper>
-        <ToFind />
-
+        <BenefitComp />
         <Card>
           <Text>Get help from vetted software developers</Text>
         </Card>
 
-        <PropsScreen />
-        {/* <MidProps /> */}
+        <StudentsRecord />
 
-        <ExpertSkills />
+        <PropsScreen />
       </Wrapper>
     </Container>
   );

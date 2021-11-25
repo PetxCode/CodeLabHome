@@ -45,6 +45,7 @@ const Course = () => {
             <TextPart>Specialise in any of the following tracks</TextPart>
             <Part>
               <Button
+                bg={back ? "bg" : ""}
                 onClick={() => {
                   setBack(true);
                   setFront(false);
@@ -55,6 +56,7 @@ const Course = () => {
                 BackEnd Engineering
               </Button>
               <Button
+                bg={front ? "bg" : ""}
                 onClick={() => {
                   setBack(false);
                   setFront(true);
@@ -65,6 +67,7 @@ const Course = () => {
                 FrontEnd Engineering
               </Button>
               <Button
+                bg={cloud ? "bg" : ""}
                 onClick={() => {
                   setBack(false);
                   setFront(false);
@@ -75,6 +78,7 @@ const Course = () => {
                 Cloud Engineering
               </Button>
               <Button
+                bg={soft ? "bg" : ""}
                 onClick={() => {
                   setBack(false);
                   setFront(false);
@@ -114,9 +118,11 @@ const Button = styled.div`
   text-align: center;
   font-size: 22px;
   color: #004080;
+  background-color: ${({ bg }) => (bg ? "rgba(249, 213, 211, 0.95)" : "")};
+  transition: all 350ms;
 
   &.active {
-    background: rgba(249, 213, 211, 0.8);
+    background: rgba(249, 213, 211, 0.3);
     color: white;
   }
 

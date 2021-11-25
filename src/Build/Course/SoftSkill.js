@@ -40,20 +40,21 @@ const profile = [
     name: "Bukola Gbami",
     img: "/img/bukky.jpg",
   },
+
   {
-    name: "Lucky Ofili",
-    // img: "/img/gideon.jpeg",
+    name: "Kelechi Samuel",
+    img: "/img/kele.jpg",
   },
 ];
 
 const profile2 = [
   {
     name: "Lucky Ofili",
-    // img: "/img/peter.jpg",
+    img: "/img/ofili.jpg",
   },
   {
     name: "Cynthia Oyemebah",
-    // img: "/img/gideon.jpeg",
+    img: "/img/cyn.jpg",
   },
 ];
 

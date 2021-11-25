@@ -18,7 +18,7 @@ const Header = ({ bg }) => {
     <>
       <Container bg={bg}>
         <Wrapper>
-          <Logo> Use Query </Logo>
+          <Logo> CodeLab </Logo>
           <Navigation>
             <Nav to="/" bg={bg}>
               Home
@@ -27,17 +27,17 @@ const Header = ({ bg }) => {
               About Us
             </Nav>
             <Nav to="/course" bg={bg}>
-              Course
+              Our Courses
             </Nav>
             <Nav to="/talents" bg={bg}>
               Talents
             </Nav>
-            <Nav to="/hire" bg={bg}>
-              Hire
-            </Nav>
           </Navigation>
 
           <SignButton>
+            <Nav to="/hire" bg={bg}>
+              Hire Our Talents
+            </Nav>
             {current ? (
               <Nav1
                 bg={bg}
@@ -73,14 +73,14 @@ export default Header;
 
 const Sider = styled.div`
   display: none;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     display: flex;
   }
 `;
 
 const Menu = styled.div`
   display: none;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     display: flex;
 
     :hover {
@@ -94,7 +94,7 @@ const Menu = styled.div`
 `;
 
 const SignButton = styled.div`
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 `;
@@ -136,7 +136,7 @@ const Navigation = styled.div`
   display: flex;
   flex: 1;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 `;
@@ -154,7 +154,7 @@ const Wrapper = styled.div`
   margin: 0 20px;
   align-items: center;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     display: flex;
     justify-content: space-between;
   }
@@ -167,13 +167,3 @@ const Container = styled.div`
   position: fixed;
   z-index: 1;
 `;
-
-// <Nav to="/create" bg={bg}>
-//             Creat New
-//           </Nav>
-//           <Nav to="/chat" bg={bg}>
-//             Chat
-//           </Nav>
-//           <Nav to="/letchat" bg={bg}>
-//             Let's Chat
-//           </Nav>

@@ -77,13 +77,13 @@ const Title = styled.div`
   }
 `;
 const Para = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 `;
 
 const Container = styled.div`
   padding-top: 0px;
   width: 100%;
-  background-image: linear-gradient(#fef6ee, #d0d1fd, #fef6ee);
+  background-image: linear-gradient(#fef6ee, #fce6e3, #fef6ee);
   /* color: #d7e2cf */
 `;
 

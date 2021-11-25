@@ -17,24 +17,32 @@ const Benefits = ({ name, name1, desc, title, title1, img }) => {
 
 export default Benefits;
 
-const CardHolder = styled.div``;
-
 const Card = styled.div`
   width: 400px;
   min-width: 300px;
-  height: 150px;
+  min-height: 100px;
   display: flex;
   justify-content: center;
-  margin: 20px 0;
-  padding-bottom: 40px;
+  margin: 0px 0;
+  padding-bottom: 0px;
+
+  @media screen and (max-width: 400px) {
+    width: 300px;
+  }
 `;
 const Name = styled.div`
   font-weight: 900;
   margin-bottom: 15px;
   font-size: 20px;
 `;
+
 const Desc = styled.div`
   line-height: 1.6;
+
+  @media screen and (max-width: 400px) {
+    display: flex;
+    padding-bottom: 0px;
+  }
 `;
 
 const Icon = styled.div`
@@ -47,6 +55,11 @@ const Icon = styled.div`
   border-radius: 10px;
   background-color: #004080;
   margin-left: 30px;
+
+  @media screen and (max-width: 400px) {
+    width: 120px;
+    height: 60px;
+  }
 `;
 
 const Image = styled.img`
@@ -58,15 +71,12 @@ const Image = styled.img`
 const Con = styled.div`
   width: 280px;
   margin-right: 30px;
+  min-height: 100px;
   padding-bottom: 30px;
-`;
 
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  /* min-height: 100vh; */
-`;
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    min-height: 100px;
+    padding-bottom: 30px;
+  }
 `;
