@@ -4,7 +4,7 @@ import { app } from "./../../base";
 
 export const StudentsRecord = () => {
   const [student, setStudent] = React.useState([]);
-
+  const [search, setSearch] = React.useState("");
   const getStudents = async () => {
     await app
       .firestore()
@@ -24,18 +24,61 @@ export const StudentsRecord = () => {
 
   return (
     <Container>
+      <SearchInput>
+        <Input
+          placeholder="Search for Developer by Name"
+          value={search}
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+        />
+      </SearchInput>
       <Wrapper>
-        {student?.map(({ id, name, set, image }) => (
-          <Student key={id}>
-            <Image src={image} />
-            <Name>{name}</Name>
-            <Name>set: {set}</Name>
-          </Student>
-        ))}
+        {student
+
+          .filter((val) => {
+            if (search === "") {
+              return val;
+            } else if (val.name.toLowerCase().includes(search.toLowerCase())) {
+              return val;
+            }
+          })
+          ?.map(({ id, name, set, image }) => (
+            <Student key={id}>
+              <Image src={image} />
+              <Name>{name}</Name>
+              <Name>set: {set}</Name>
+            </Student>
+          ))}
       </Wrapper>
     </Container>
   );
 };
+
+const Input = styled.input`
+  width: 300px;
+  height: 40px;
+  margin-bottom: 50px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding-left: 10px;
+
+  ::placeholder {
+    font-family: Raleway;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 260px;
+    margin-bottom: 30px;
+  }
+`;
+
+const SearchInput = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 
 const Name = styled.div``;
 const Image = styled.img`

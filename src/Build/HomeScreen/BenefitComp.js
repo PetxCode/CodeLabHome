@@ -75,6 +75,11 @@ const Title = styled.div`
     color: red;
     margin-left: 5px;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
 `;
 const Para = styled.div`
   margin-bottom: 60px;
@@ -84,7 +89,6 @@ const Container = styled.div`
   padding-top: 0px;
   width: 100%;
   background-image: linear-gradient(#fef6ee, #fce6e3, #fef6ee);
-  /* color: #d7e2cf */
 `;
 
 const WrapperCard = styled.div`

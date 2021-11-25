@@ -10,13 +10,13 @@ const Prepare = () => {
         <Holder>
           <Text>Prepare yourself for the future!</Text>
           <Desc>
-            Our extensive Diploma program is set to produce top Software
+            Our extensive Training program is set to produce top notch Software
             Engineers who are able to compete globally. Hiring our graduates
             guarantee that you have access to highly skilled, passionate and
             professional tech talent to ensure continuous business success.
           </Desc>
           <But>
-            <Button to="/register">Get Started</Button>
+            <Button to="/hire">Hire a Talents</Button>
           </But>
         </Holder>
       </Wrapper>
@@ -42,6 +42,11 @@ const Button = styled(Link)`
   font-weight: bold;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 13px;
+    padding: 15px 20px;
+  }
 `;
 
 const Desc = styled.div`
@@ -50,6 +55,12 @@ const Desc = styled.div`
   margin-top: 20px;
   line-height: 1.5;
   flex: 1;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
 `;
 
 const Text = styled.div`
@@ -58,12 +69,17 @@ const Text = styled.div`
   font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 500px) {
+    margin: 10px 15px;
+    font-size: 25px;
+  }
 `;
 
 const Holder = styled.div`
   overflow: hidden;
   width: 550px;
-  height: 400px;
+  min-height: 400px;
   background: #f9d5d3;
   position: absolute;
   display: flex;
@@ -86,6 +102,7 @@ const Holder = styled.div`
     bottom: 90px;
     align-items: center;
     width: 300px;
+    min-height: 300px;
   }
 `;
 

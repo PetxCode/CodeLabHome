@@ -10,7 +10,7 @@ const HomeScreen = () => {
       <Wrapper>
         <BenefitComp />
         <Card>
-          <Text>Get help from vetted software developers</Text>
+          <Text>Students that has done through our Program, so far...!</Text>
         </Card>
 
         <StudentsRecord />
@@ -35,6 +35,11 @@ const Text = styled.div`
     font-size: 40px;
     font-weight: bold;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 22px;
+    font-weight: bold;
+  }
 `;
 
 const Card = styled.div`
@@ -42,6 +47,10 @@ const Card = styled.div`
   justify-content: center;
   display: flex;
   margin-top: 120px;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 70px;
+  }
 `;
 const Wrapper = styled.div`
   width: 100%;
@@ -51,6 +60,10 @@ const Wrapper = styled.div`
   align-items: center;
   padding-top: 200px;
   background-color: #fef6ee;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 120px;
+  }
 `;
 const Container = styled.div`
   height: 100%;

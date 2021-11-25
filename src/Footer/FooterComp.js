@@ -27,6 +27,11 @@ const Content = styled.div`
   margin-top: 40px;
   display: flex;
   flex-direction: column;
+  min-height: 20px;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 20px;
+  }
 `;
 const Header = styled.div`
   font-size: 18px;
@@ -36,6 +41,9 @@ const SubNav = styled(Link)`
   margin: 10px 10px;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  @media screen and (max-width: 500px) {
+    margin-top: 5px;
+  }
 `;
 const Wrapper = styled.div``;
 const Container = styled.div`
@@ -43,4 +51,8 @@ const Container = styled.div`
   /* width: 150px; */
   padding-top: 60px;
   margin: 0 60px;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 30px;
+  }
 `;

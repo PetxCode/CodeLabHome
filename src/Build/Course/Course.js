@@ -159,6 +159,11 @@ const TextPart = styled.div`
   font-size: 35px;
   font-weight: bold;
   text-align: center;
+
+  @media screen and (max-width: 500px) {
+    font-size: 30px;
+    margin-top: 50px;
+  }
 `;
 
 const CourseHeader = styled.div`
@@ -172,6 +177,10 @@ const CourseHeader = styled.div`
   @media screen and (max-width: 800px) {
     display: flex;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-bottom: 50px;
   }
 `;
 const Holder = styled.div`
@@ -207,6 +216,12 @@ const TextH = styled.div`
     margin-bottom: 50px;
     width: 100%;
   }
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 35px;
+  }
 `;
 const TextS = styled.div`
   width: 60%;
@@ -216,6 +231,12 @@ const TextS = styled.div`
   @media screen and (max-width: 800px) {
     margin-bottom: 50px;
     width: 100%;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 18px;
   }
 `;
 const Learn = styled.div`
@@ -254,6 +275,10 @@ const TextSub = styled.div`
   @media screen and (max-width: 800px) {
     margin-bottom: 50px;
   }
+  @media screen and (max-width: 500px) {
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
 `;
 const TextHeader = styled.div`
   width: 100%;
@@ -265,7 +290,7 @@ const TextHeader = styled.div`
   margin-bottom: 20px;
 
   @media screen and (max-width: 500px) {
-    font-size: 45px;
+    font-size: 35px;
   }
 `;
 const Wrapper = styled.div`
@@ -273,6 +298,10 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 120px;
+  }
 `;
 const Container = styled.div`
   width: 100%;

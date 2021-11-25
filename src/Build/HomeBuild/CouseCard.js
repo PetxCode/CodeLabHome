@@ -24,6 +24,10 @@ const Title = styled.div`
   font-weight: bold;
   font-size: 30px;
   padding-top: 15px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 
 const Click = styled(Link)`
@@ -46,6 +50,15 @@ const Click = styled(Link)`
     margin-top: 5px;
     margin-left: 5px;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+
+    .MuiSvgIcon-root {
+      margin-top: 2px;
+      margin-left: 5px;
+    }
+  }
 `;
 
 const Icon = styled.img`
@@ -53,6 +66,11 @@ const Icon = styled.img`
   height: 80px;
   margin-left: 20px;
   object-fit: contain;
+
+  @media screen and (max-width: 500px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 const Para = styled.div`
   font-size: 18px;
@@ -61,6 +79,10 @@ const Para = styled.div`
   padding-top: 10px;
   flex: 1;
   line-height: 1.35;
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
 const Header = styled.div`
   width: 100%;
@@ -70,6 +92,11 @@ const Header = styled.div`
   align-items: center;
   margin-bottom: 20px;
   color: #004080;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    height: 80px;
+  }
 `;
 const Container = styled.div`
   overflow: hidden;
@@ -88,5 +115,9 @@ const Container = styled.div`
 
   :hover {
     transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 500px) {
+    min-height: 400px;
   }
 `;

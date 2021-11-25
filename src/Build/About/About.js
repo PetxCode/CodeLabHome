@@ -13,8 +13,8 @@ const About = () => {
           <TextHeader>The Story of CodeLab</TextHeader>
           <TextHolder>
             <TextSub>
-              An educational program designed to arm you with the skills and
-              knowledge required to launch your tech career.
+              An Software Educational Program designed to arm young people with
+              the skills and knowledge required to launch your Tech career.
             </TextSub>
           </TextHolder>
           <LineHolder>
@@ -149,6 +149,11 @@ const CPH = styled.div`
     color: #004080;
     margin-right: 20px;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 21px;
+    line-height: 1.2;
+  }
 `;
 
 const Content = styled.div`
@@ -158,6 +163,11 @@ const Content = styled.div`
   align-items: center;
   padding-bottom: 50px;
   padding-top: 50px;
+
+  @media screen and (max-width: 500px) {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 `;
 const ContentHeader1 = styled.div`
   font-size: 45px;
@@ -171,31 +181,57 @@ const ContentHeader1 = styled.div`
   @media screen and (max-width: 800px) {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 30px;
+    width: 80%;
   }
 `;
 const ContentHeader = styled.div`
   font-size: 45px;
   font-weight: bold;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
 `;
 
 const ContentPara = styled.div`
   width: 60%;
   font-size: 25px;
   line-height: 1.5;
+
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 80%;
+  }
 `;
 
 const ImageHolder = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  /* position: relative; */
 `;
 const Video = styled.video`
   width: 80%;
   object-fit: cover;
   /* position: absolute; */
   margin-top: -250px;
+
+  @media screen and (max-width: 500px) {
+    margin-top: -300px;
+  }
 `;
 
 const Holder = styled.div`
@@ -207,10 +243,10 @@ const Holder = styled.div`
   flex-direction: column;
   min-height: 500px;
   width: 100%;
-  /* 
-  @media screen and (max-width: 600px) {
-    padding-top: 500px;
-  } */
+
+  @media screen and (max-width: 500px) {
+    padding-top: 120px;
+  }
 `;
 
 const Line = styled.div`
@@ -236,6 +272,10 @@ const TextHolder = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 20px;
+  }
 `;
 const TextSub = styled.div`
   width: 80%;
@@ -248,6 +288,13 @@ const TextSub = styled.div`
   @media screen and (max-width: 800px) {
     margin-bottom: 50px;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 90%;
+    line-height: 1.3;
+  }
 `;
 const TextHeader = styled.div`
   width: 100%;
@@ -259,7 +306,7 @@ const TextHeader = styled.div`
   margin-bottom: 20px;
 
   @media screen and (max-width: 500px) {
-    font-size: 45px;
+    font-size: 35px;
   }
 `;
 const Wrapper = styled.div`

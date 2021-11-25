@@ -121,7 +121,7 @@ const Card = styled.div`
   justify-content: center;
   flex-direction: ${({ rw }) => (rw ? "row-reverse" : "row")};
   align-items: center;
-  width: 80%;
+  width: 90%;
   padding: 20px 0;
   border-radius: 5px;
   background-color: white;

@@ -13,8 +13,8 @@ const TopHero = () => {
             <span>no Upfront Payment</span>
           </Text>
           <Sub>
-            Learn how to code in 1 year (9 months training + 3 months
-            internship) and earn a Diploma
+            Learn how to code and Build Amazing Projects in 1 year (9 months of
+            Rigoius training + 3 months internship)
           </Sub>
           <ButtonHolder>
             <Button bg1>Apply Now (Closed)</Button>
@@ -34,12 +34,6 @@ const TopHero = () => {
               </Icon>
               <TextDown>No prior programming knowledge required</TextDown>
             </Arrange>
-            {/* <Arrange>
-              <Icon cl="green">
-                <GppGoodIcon />
-              </Icon>
-              <TextDown>No Application fee</TextDown>
-            </Arrange> */}
           </Below>
         </Card>
       </Wrapper>
@@ -56,6 +50,11 @@ const Below = styled.div`
   flex-wrap: wrap:
   margin-top: 50px;
   padding-bottom: 50px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 11px;
+    padding-bottom: 20px;
+  }
 `;
 const Icon = styled.div`
   margin: 0 5px;
@@ -85,10 +84,19 @@ const Button = styled.div`
   border-color: ${({ bg }) => (bg ? "black" : "transparent")};
   transform: scale(1);
   transition: all 350ms;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
   :hover {
     transform: scale(0.97);
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin: 0px;
   }
 `;
 const ButtonHolder = styled.div`
@@ -100,6 +108,13 @@ const Sub = styled.div`
   margin-top: 20px;
   margin-bottom: 50px;
   text-align: center;
+  font-weight: bold;
+
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 `;
 
 const Text = styled.div`
@@ -112,6 +127,12 @@ const Text = styled.div`
   span {
     color: red;
     margin-left: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -135,4 +156,8 @@ const Contianer = styled.div`
   min-height: 700px;
   background-color: #fef6ee;
   color: #004080;
+
+  @media screen and (max-width: 500px) {
+    min-height: 500px;
+  }
 `;

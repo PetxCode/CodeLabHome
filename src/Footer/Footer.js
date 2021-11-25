@@ -98,6 +98,10 @@ const Bottom = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 100px;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 10px;
+  }
 `;
 const Wrapper = styled.div`
   display: flex;

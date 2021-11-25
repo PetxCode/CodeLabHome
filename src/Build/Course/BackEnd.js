@@ -19,22 +19,57 @@ const courseData = [
 ];
 
 const courseData2 = [
-  { topic: "Data Types" },
-  { topic: "Operators" },
-  { topic: "Package managers: Bundler and RubyGems" },
-  { topic: "Developing Web Applications with Ruby" },
-  { topic: "Package managers: npm and yarn" },
-  { topic: "Handling Authentication and Authorization" },
-  { topic: "Websockets" },
-  { topic: "Loggin" },
-  { topic: "Unit and Integrated Tesing" },
-  { topic: "Frameworks (Rails)" },
-  { topic: "Object, Classes and Methods" },
-  { topic: "Databases (Relational and Non-Relational Databases)" },
-  { topic: "Template engines and Server-side rendering" },
-  { topic: "API Design patterns" },
-  { topic: "Caching" },
-  { topic: "Deployment" },
+  { topic: "Create Express Server in NodeJs" },
+  { topic: "Create GraphQL Server using express-graphql" },
+  { topic: "Understand GraphQL Resolver Arguments" },
+  { topic: "Connect GraphQL App with MongoDB using Mongoose" },
+  { topic: "Create Record in MongoDB Using GraphQL Mutation" },
+  { topic: "Get Records From MongoDB Using GraphQL Query" },
+  {
+    topic: "Updating and Deleting Records From MongoDB Using GraphQL Mutation",
+  },
+  { topic: "Create GraphQL Server with GraphQL Yoga" },
+  {
+    topic:
+      "Split up your schema definition, resolvers, and Query type into multip",
+  },
+  {
+    topic:
+      "OpeCreate a Mongoose User model for Authentication in GraphQLrators",
+  },
+  { topic: "Register and Encrypt User Data and Return JWT Payload with Graph" },
+  { topic: "Authenticate a User using a JSON Web Token in GraphQL" },
+  { topic: "Create a Middleware for Authentication in GraphQL" },
+  { topic: "Paginate List of Data in GraphQL" },
+  { topic: "	Sort GraphQL Query Results by Field" },
+  { topic: "	Adding real-time functionality with GraphQL Subscriptions" },
+  { topic: "	Batching in GraphQL" },
+  { topic: "Integrate Jest Testing Framework with GraphQL, and NodeJs" },
+  { topic: "Write Unit test for Resolvers in GraphQL" },
+  { topic: "Write Integration Test for Queries And Mutations in GraphQL" },
+];
+
+const courseData3 = [
+  { topic: "Introduction to Data Structure and it's Importance" },
+  { topic: "Link Lists" },
+  { topic: "Banary Search Tree" },
+  { topic: "Hash Table" },
+  { topic: "JS Algorithm Introduction" },
+  { topic: "Fizz Buzz" },
+  { topic: "Harmless Random Note" },
+  { topic: " Is Palindrome" },
+  { topic: "Caesar Cipher" },
+  { topic: "Reverse Words" },
+  { topic: "Two Sum" },
+  { topic: " Binary Search" },
+  { topic: " Fibonacci" },
+  { topic: "Memoized Fibonacci" },
+  { topic: "Sieve of Eratosthenes" },
+  { topic: "Max Stock Profit" },
+  { topic: "Triple Add Function" },
+  { topic: "Scope and self, Equals vs Strict Equals" },
+  { topic: "Curry Function, Counter Function" },
+  { topic: " Singly or Doubly Invoked Function" },
 ];
 
 const profile = [
@@ -52,20 +87,20 @@ const profile = [
   },
 ];
 
-// const profile2 = [
-//   {
-//     name: "Friday Ubani",
-//     img: "/img/ubani.jpg",
-//   },
-//   {
-//     name: "Anyahma Niddi",
-//     img: "/img/ndidi.jpeg",
-//   },
-//   {
-//     name: "Peter Oti",
-//     img: "/img/peter.jpg",
-//   },
-// ];
+const profile2 = [
+  {
+    name: "Peter Oti",
+    img: "/img/peter.jpg",
+  },
+  {
+    name: "Friday Ubani",
+    img: "/img/ubani.jpg",
+  },
+  {
+    name: "Anyahma Niddi",
+    img: "/img/ndidi.jpeg",
+  },
+];
 
 const BackEnd = () => {
   return (
@@ -93,16 +128,16 @@ const BackEnd = () => {
             course="NodeJS"
           />
           <CourseCard
-            courseData={courseData2}
-            profile={profile}
+            courseData={courseData3}
+            profile={profile2}
             bg="#ff1956"
             course="Algorithm & Data Structure"
           />
           <CourseCard
             courseData={courseData2}
-            profile={profile}
+            profile={profile2}
             bg="#ff1956"
-            course="Ruby"
+            course="GraphQL"
           />
         </Card>
       </Wrapper>

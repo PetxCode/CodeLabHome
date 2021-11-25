@@ -57,6 +57,10 @@ const Container = styled.div`
   margin-top: 80px;
   padding-bottom: 30px;
   color: #09386d;
+
+  @media screen and (max-width: 500px) {
+    padding-bottom: 0;
+  }
 `;
 const Wrapper = styled.div`
   width: 100%;

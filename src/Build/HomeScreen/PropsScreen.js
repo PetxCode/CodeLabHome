@@ -21,7 +21,7 @@ const PropsScreen = () => {
         desc3="Get answers to complex problems"
       />
 
-      <HomeProps
+      {/* <HomeProps
         bg
         img={find1}
         rw
@@ -33,7 +33,7 @@ const PropsScreen = () => {
         desc1="Debug with the help of an expert"
         desc2="Personalize your learning experience"
         desc3="Get answers to complex problems"
-      />
+      /> */}
     </Container>
   );
 };

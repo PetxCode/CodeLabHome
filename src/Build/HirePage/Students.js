@@ -6,6 +6,7 @@ import { app } from "./../../base";
 
 const Students = () => {
   const [data, setData] = React.useState([]);
+  const [search, setSearch] = React.useState("");
 
   const fetchData = async () => {
     await app
@@ -25,55 +26,74 @@ const Students = () => {
   }, []);
   return (
     <Container>
+      <SearchInput>
+        <Input
+          placeholder="Search for Developer by Name"
+          value={search}
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+        />
+      </SearchInput>
       <Wrapper>
-        {data?.map((props, i) => (
-          <Card key={props.i}>
-            <Content>
-              <Title>
-                <Name>
-                  {props.firstName} {props.lastName}
-                </Name>
-                <Place>{props.location}</Place>
-              </Title>
-              <Image src={props.img} />
-            </Content>
-            <Line />
-            <About>About</About>
-            <Sub>{props.desc}</Sub>
-            <Line />
+        {data
+          .filter((val) => {
+            if (search === "") {
+              return val;
+            } else if (
+              val.firstName.toLowerCase().includes(search.toLowerCase())
+            ) {
+              return val;
+            }
+          })
+          ?.map((props, i) => (
+            <Card key={props.i}>
+              <Content>
+                <Title>
+                  <Name>
+                    {props.firstName} {props.lastName}
+                  </Name>
+                  <Place>{props.location}</Place>
+                </Title>
+                <Image src={props.img} />
+              </Content>
+              <Line />
+              <About>About</About>
+              <Sub>{props.desc}</Sub>
+              <Line />
 
-            <About>Core Skill</About>
+              <About>Core Skill</About>
 
-            <SkillHold>
-              <Skill bg>
-                {props.pry?.map((skill) => (
-                  <Skill1 bg>{skill.skill}</Skill1>
-                ))}
-              </Skill>
-            </SkillHold>
-            <Line />
+              <SkillHold>
+                <Skill bg>
+                  {props.pry?.map((skill) => (
+                    <Skill1 bg>{skill.skill}</Skill1>
+                  ))}
+                </Skill>
+              </SkillHold>
+              <Line />
 
-            <About>Secondary Skill</About>
+              <About>Secondary Skill</About>
 
-            <SkillHold>
-              <Skill>
-                {props.sec?.map((skill, i) => (
-                  <Skill1 key={skill.i}>{skill.skill}</Skill1>
-                ))}
-              </Skill>
-            </SkillHold>
+              <SkillHold>
+                <Skill>
+                  {props.sec?.map((skill, i) => (
+                    <Skill1 key={skill.i}>{skill.skill}</Skill1>
+                  ))}
+                </Skill>
+              </SkillHold>
 
-            {/* <Line2 /> */}
-            <Name1
-              to={`/student/${props.id}`}
-              onClick={() => {
-                console.log("Hello");
-              }}
-            >
-              <span>Hire {props.firstName}</span>
-            </Name1>
-          </Card>
-        ))}
+              {/* <Line2 /> */}
+              <Name1
+                to={`/student/${props.id}`}
+                onClick={() => {
+                  console.log("Hello");
+                }}
+              >
+                <span>Hire {props.firstName}</span>
+              </Name1>
+            </Card>
+          ))}
       </Wrapper>
     </Container>
   );
@@ -81,18 +101,40 @@ const Students = () => {
 
 export default Students;
 
+const Input = styled.input`
+  width: 300px;
+  height: 40px;
+  margin-bottom: 50px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding-left: 10px;
+
+  ::placeholder {
+    font-family: Raleway;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 260px;
+    margin-bottom: 30px;
+  }
+`;
+
+const SearchInput = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 const Image = styled.img`
   margin-right: 30px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /* background-color: #f9af2f; */
   object-fit: cover;
-  /* border: 2px solid #f9af2f; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: ${({ bg }) => (bg ? "#f9af2f" : "#55a350")}; */
 `;
 const Content = styled.div`
   width: 100%;
@@ -128,6 +170,12 @@ const Name1 = styled(Link)`
       top: -10px;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 0;
+  }
 `;
 
 const SkillHold = styled.div`
@@ -142,6 +190,11 @@ const SkillHold = styled.div`
     margin: 20px 30px;
     /* width: 400px; */
     flex-wrap: wrap;
+
+    @media screen and (max-width: 500px) {
+      min-width: 280px;
+      margin: 10px 0;
+    }
   }
 `;
 const Skill1 = styled.div`
@@ -153,27 +206,44 @@ const Skill1 = styled.div`
   display: flex;
 `;
 const Skill = styled.div`
-  /* background-color: ${({ bg }) => (bg ? "#f9af2f" : "#55a350")}; */
   padding: 5px 10px;
   margin: 10px;
   border-radius: 30px;
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 500px) {
+    margin: 0px;
+    font-size: 13px;
+  }
 `;
 
 const Line = styled.div`
   margin: 35px 30px;
   border-top: 1px solid lightgray;
+
+  @media screen and (max-width: 500px) {
+    margin: 20px 30px;
+  }
 `;
 const About = styled.div`
   margin: 0 30px;
   font-size: 20px;
   font-weight: bold;
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
 `;
 const Sub = styled.div`
   margin: 10px 30px;
   font-size: 17px;
   line-height: 1.5;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    line-height: 1.3;
+  }
 `;
 
 const Card = styled.div`
@@ -186,6 +256,11 @@ const Card = styled.div`
   padding-top: 30px;
   padding-bottom: 40px;
   margin: 10px;
+
+  @media screen and (max-width: 500px) {
+    width: 260px;
+    margin: 10px 0;
+  }
 `;
 const Title = styled.div`
   margin-left: 30px;
@@ -193,6 +268,10 @@ const Title = styled.div`
 const Name = styled.div`
   font-weight: bold;
   font-size: 30px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 25px;
+  }
 `;
 const Place = styled.div``;
 

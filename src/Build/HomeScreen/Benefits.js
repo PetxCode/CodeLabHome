@@ -76,7 +76,7 @@ const Con = styled.div`
 
   @media screen and (max-width: 400px) {
     width: 100%;
-    min-height: 100px;
-    padding-bottom: 30px;
+    min-height: 50px;
+    padding-bottom: 0px;
   }
 `;

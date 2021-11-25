@@ -8,15 +8,16 @@ const HirePage = () => {
     <COntainer>
       <Wrapper>
         <Title>
-          Hire Top <span>React.js Developers</span> Today
+          Hire Our Top <span>Developers</span> Today
         </Title>
         <SubTitle>
-          Search no further than Andela for the world’s top-notch React.js
-          developers, engineers, and consultants. Respected industry leaders and
-          evolutionary startups both agree: Andela is the marketplace of choice
-          for intuitive and robust front-end design and development solutions
-          toward highly fused collaboration, better products, and optimal
-          scalability.
+          Search no further than CodeLab for the world’s top-notch developers,
+          engineers, and consultants.
+          <br />
+          <br />
+          CodeLab has a pool of Developoers of choice for intuitive and robust
+          front-end design, backebd solution and development solutions toward
+          highly fused collaboration, better products, and optimal scalability.
         </SubTitle>
       </Wrapper>
     </COntainer>
@@ -33,6 +34,10 @@ const Title = styled.div`
   span {
     text-decoration: underline;
   }
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 20px;
+  }
 `;
 const SubTitle = styled.div`
   font-size: 23px;
@@ -44,7 +49,13 @@ const SubTitle = styled.div`
   margin-top: 30px;
 
   @media screen and (max-width: 800px) {
-    /* font-size: 25px; */
+    line-height: 1.35;
+  }
+
+  @media screen and (max-width: 500px) {
+    min-width: 280px;
+    margin-top: 15px;
+    font-size: 20px;
     line-height: 1.35;
   }
 `;

@@ -93,19 +93,16 @@ const App = () => {
         <Collaborate
           pix={pix}
           title="You can Collaborate with us"
-          desc=" Our extensive Diploma program is set to produce top Software
-        Engineers who are able to compete globally. Hiring our graduates
-        guarantee that you have access to highly skilled, passionate and
-        professional tech talent to ensure continuous business success."
+          desc="Interested in inspiring the next generation of top Software Engineers? Collaborate with us. We are committed to helping as many young Nigerians, especially those from slum communities kickstart a career in technology by providing them with access to quality technical education by real world experts"
         />
         <Collaborate
           vid={vid}
           bg
           title="Help us Reach more Youth"
-          desc=" Our extensive Diploma program is set to produce top Software
-        Engineers who are able to compete globally. Hiring our graduates
-        guarantee that you have access to highly skilled, passionate and
-        professional tech talent to ensure continuous business success."
+          desc="Establishing training infrastructure, for young people in slum Communities to become world class software engineer for FREE, in other for them to have equal advantage to complete and globally for the opportunity of a better life...
+
+          If this Vision align with you, then let's do it together!
+          "
         />
         <Footer />
       </BrowserRouter>
@@ -124,7 +121,8 @@ const StepDesc = styled.div`
   color: ${({ bg }) => bg};
 
   @media screen and (max-width: 400px) {
-    font-size: 25px;
+    font-size: 18px;
+    margin-right: 15px;
   }
 `;
 
@@ -134,6 +132,12 @@ const StepNumb = styled.div`
   opacity: 0.5;
   font-weight: bold;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
 `;
 
 const StepContent = styled.div``;
@@ -149,7 +153,7 @@ const StepIcon = styled.div`
 
   @media screen and (max-width: 400px) {
     .MuiSvgIcon-root {
-      font-size: 80px;
+      font-size: 60px;
       margin: 0px 0px 0px 0px;
     }
   }
@@ -169,6 +173,11 @@ const StepTExt = styled.div`
   text-align: center;
   margin-bottom: 60px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
 `;
 
 const Step = styled.div`

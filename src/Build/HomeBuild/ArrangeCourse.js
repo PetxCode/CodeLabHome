@@ -10,7 +10,7 @@ import AppsIcon from "@mui/icons-material/Apps";
 const ArrangeCourse = () => {
   return (
     <Container>
-      <Card>FIND THE RIGHT TRACK FOR YOU</Card>
+      <Card>All these and More... are what you will Learn</Card>
       <Wrapper>
         <CoursCard
           to="/course"
@@ -58,6 +58,14 @@ const Card = styled.div`
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 30px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    margin: 0 30px;
+  }
 `;
 const Wrapper = styled.div`
   width: 100%;
@@ -71,4 +79,8 @@ const Container = styled.div`
   height: 100%;
   padding-bottom: 50px;
   color: #004080;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 30px;
+  }
 `;
