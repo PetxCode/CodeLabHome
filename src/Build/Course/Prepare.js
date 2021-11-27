@@ -55,6 +55,9 @@ const Desc = styled.div`
   margin-top: 20px;
   line-height: 1.5;
   flex: 1;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: white;
 
   @media screen and (max-width: 500px) {
     font-size: 15px;
@@ -69,6 +72,7 @@ const Text = styled.div`
   font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
+  color: white;
 
   @media screen and (max-width: 500px) {
     margin: 10px 15px;
@@ -80,15 +84,19 @@ const Holder = styled.div`
   overflow: hidden;
   width: 550px;
   min-height: 400px;
-  background: #f9d5d3;
+  /* background: #f9d5d3; */
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   right: 0px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  border-radius: 5px;
+
+  background: rgba(249, 213, 211, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
   @media screen and (max-width: 1000px) {
     position: absolute;
