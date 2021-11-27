@@ -23,6 +23,12 @@ const Image = styled.img`
   object-fit: contain;
   margin: 30px 0;
   padding: 20px;
+
+  @media screen and (max-width: 500px) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
 `;
 const Title = styled.div`
   font-weight: 900;
@@ -32,6 +38,11 @@ const Title = styled.div`
   width: 92%;
   margin-bottom: 20px;
   line-height: 1.2;
+
+  @media screen and (max-width: 500px) {
+    font-size: 22px;
+    width: 95%;
+  }
 `;
 const SubTitle = styled.div`
   font-size: 20px;
@@ -39,23 +50,41 @@ const SubTitle = styled.div`
   text-align: center;
   line-height: 1.5;
   padding-bottom: 20px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+    line-height: 1.2;
+    /* padding-bottom: 10px; */
+    text-align: left;
+    margin: 0 15px;
+  }
 `;
 
 const Container = styled.div`
   width: 100%;
-  height: 600px;
+  min-height: 600px;
   height: 100%;
   display: flex;
   justify-content: center;
   background-color: ${({ bg }) => (bg ? "#09386D" : "transparent")};
   color: ${({ bg }) => (bg ? "white" : "black")};
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    min-height: 400px;
+  }
 `;
 const Wrapper = styled.div`
   min-width: 400px;
-  width: 80%;
+  /* width: 80%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 40px;
+
+  @media screen and (max-width: 500px) {
+    min-width: 80%;
+    padding-bottom: 0px;
+  }
 `;

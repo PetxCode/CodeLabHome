@@ -291,6 +291,7 @@ const TextHeader = styled.div`
 
   @media screen and (max-width: 500px) {
     font-size: 35px;
+    padding-top: 20px;
   }
 `;
 const Wrapper = styled.div`

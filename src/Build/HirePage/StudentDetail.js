@@ -495,6 +495,10 @@ const Card1 = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (max-width: 500px) {
+    margin: 20px 0;
+  }
 `;
 const Card2 = styled.div`
   margin: 20px;
@@ -511,6 +515,12 @@ const Card2 = styled.div`
     width: 360px;
     padding-bottom: 20px;
   }
+
+  @media screen and (max-width: 400px) {
+    width: 90%;
+    padding-bottom: 20px;
+    margin: 0;
+  }
 `;
 const Card3 = styled.div`
   margin: 20px;
@@ -522,6 +532,10 @@ const Card3 = styled.div`
   justify-content: center;
   padding-bottom: 10px;
   overflow: hidden;
+
+  @media screen and (max-width: 500px) {
+    margin: 20px 0;
+  }
 `;
 
 const Container = styled.div`
@@ -534,19 +548,22 @@ const Container = styled.div`
 const Info = styled.div`
   font-weight: 900;
   font-size: 40px;
-  /* margin: 20px; */
   background-color: #ebeefd;
   width: 100%;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    text-align: center;
+    height: 250px;
+  }
 `;
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  /* margin-top: 30px; */
   flex-direction: column;
   align-items: center;
 `;
-// const Container = styled.div``

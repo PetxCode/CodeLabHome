@@ -222,6 +222,10 @@ const ImageHolder = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 0px;
+  }
 `;
 const Video = styled.video`
   width: 80%;
@@ -307,6 +311,7 @@ const TextHeader = styled.div`
 
   @media screen and (max-width: 500px) {
     font-size: 35px;
+    padding-top: 20px;
   }
 `;
 const Wrapper = styled.div`

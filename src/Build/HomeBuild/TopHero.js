@@ -159,5 +159,6 @@ const Contianer = styled.div`
 
   @media screen and (max-width: 500px) {
     min-height: 500px;
+    padding-top: 20px;
   }
 `;

@@ -92,6 +92,11 @@ const Desc = styled.div`
   margin-top: 20px;
   line-height: 1.5;
   flex: 1;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
 `;
 
 const Text = styled.div`
@@ -101,6 +106,11 @@ const Text = styled.div`
   font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 500px) {
+    margin: 10px 15px;
+    font-size: 25px;
+  }
 `;
 
 const Holder = styled.div`
